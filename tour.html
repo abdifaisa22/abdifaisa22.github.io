@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0099ff;
+  font-family: courier;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1500px;
+  background: #00ffff;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-famiy:verdana;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1500px;
+  background-color:#669999;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #14141f;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+   color:black;
+}
+a:hover {
+  color:red;
+}
+a:visited {
+  color:black;
+}
+img {
+    max-height:100%;
+    max-width:100%;
+}
+p {color: white;
+
+}
+ol {
+    color: white;
+    text-align: left;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>𝐹𝒾𝒻𝓉𝒽 𝐻𝒶𝓇𝓂𝑜𝓃𝓎</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Band</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+    </ul>
+    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/fifth-harmony-sprite-enak.jpg"/>
+  </nav>
+  
+  <article>
+  <h1 style="font-size:50px;color:white;border:5px dashed black;">Tour</h1>
+ 
+ <table align="center" style="color:white;font-size:20px;">
+ 
+ <tr>
+ <td>4/27 - The Regency Ballroom - San Francisco, CA</td>
+ </tr>
+ <tr>
+ <td>4/28 - House Of Blues - San Diego, CA</td>
+ </tr>
+ <tr>
+ <td>3/1 - Club Nokia - Los Angelos, CA</td>
+ </tr>
+ <tr>
+ <td>3/4 - South Side Music Hall - Dallas, TX</td>
+ </tr>
+ <tr>
+ <td>3/5 - Warehouse Live - Houston,TX</td>
+ </tr>
+ <tr>
+ <td>3/7 - Parker Playhouse - Fort Lauderale, FL</td>
+ </tr>
+ <tr>
+ <td>3/8 - Busch Gardens - Tampa, FL</td>
+ </tr>
+ <tr>
+ <td>3/9 - Buckhead Theatre - Atlanta, GA</td>
+ </tr>
+ <tr>
+ <td>3/10 - Amos Southend - Charlotte, NC</td>
+ </tr>
+ <tr>
+ <td>3/11 - The Norva - Norfolk, VA</td>
+ </tr>
+ <tr>
+ <td>3/12 - The National - Richmond, VA</td>
+ </tr>
+ <tr>
+ <td>3/14 - Vic Theatre - Chicago, IL</td>
+ </tr>
+ 
+ </table>
+ 
+ <h1 style="font-size:50px;color:white;border:5px dashed black;">Buy Tickets</h1>
+ <iframe src="https://www.ticketmaster.com" height="500" width="500"></iframe>
+ 
+   
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020 Faisa Abdi. All Rights Reserved.</i>  
+</footer>
+
+</body>
+</html>
+
